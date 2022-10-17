@@ -3,7 +3,7 @@ import Home from './components/Home';
 import BirthdayReminder from './components/01-birthday-reminder/App';
 import Tours from './components/02-tours/App';
 import Error from './components/Error';
-import './App.css';
+// import './App.css';
 
 function App() {
   return (
