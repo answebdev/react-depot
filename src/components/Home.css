@@ -1,14 +1,11 @@
-.App {
+.app {
   padding: 4em 8em;
   /* background-color: #00d8ff; */
 }
 
 .title {
   font-size: 2.5em;
-}
-
-.sub-title {
-  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .main-link {

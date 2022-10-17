@@ -11,9 +11,8 @@ const Home = () => {
           <title>React Depot</title>
         </Helmet>
       </div>
-      <div>
-        <h1 className='title'>React Depot</h1>
-        <h2 className='sub-title'>Projects</h2>
+      <div className='app'>
+        <h1 className='title'>Projects</h1>
         <ol>
           <li>
             <Link className='main-link' to='/birthday-reminder'>
