@@ -9,6 +9,17 @@ const Error = () => {
       <div>
         <Helmet>
           <title>React Depot | Error</title>
+          <style type='text/css'>{`
+          .navbar{
+            display: none;
+          }
+
+          body {
+            background-color: #ffffff;
+            letter-spacing: 1px;
+            height: 100%;
+          }
+    `}</style>
         </Helmet>
       </div>
       <header className='Error-header'>

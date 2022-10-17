@@ -6,7 +6,7 @@ import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <>
+    <div className='navbar'>
       <AppBar
         sx={{
           backgroundColor: '#282C34',
@@ -27,7 +27,7 @@ const Navbar = () => {
           </span>
         </Toolbar>
       </AppBar>
-    </>
+    </div>
   );
 };
 
