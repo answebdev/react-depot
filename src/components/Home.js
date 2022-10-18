@@ -24,6 +24,11 @@ const Home = () => {
               Tours
             </Link>
           </li>
+          <li>
+            <Link className='main-link' to='/reviews'>
+              Reviews
+            </Link>
+          </li>
         </ol>
       </div>
     </>
