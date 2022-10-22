@@ -18,7 +18,9 @@ const App = () => {
         <section className='container'>
           <h3>{people.length} birthdays today</h3>
           <List people={people} />
-          <button onClick={() => setPeople([])}>Clear All</button>
+          <button className='button' onClick={() => setPeople([])}>
+            Clear All
+          </button>
         </section>
       </main>
     </>

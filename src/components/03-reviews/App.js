@@ -12,7 +12,7 @@ const App = () => {
         </Helmet>
       </div>
       <main>
-        <section className='container'>
+        <section className='reviews-container'>
           <div className='title'>
             <h2>Our Reviews</h2>
             <div className='underline'></div>
