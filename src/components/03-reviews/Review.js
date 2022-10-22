@@ -42,6 +42,19 @@ const Review = () => {
     });
   };
 
+  const randomPerson = () => {
+    // Use 'Math.floor' to round numbers down so that it's now between 0 and 3.
+    let randomNumber = Math.floor(Math.random() * people.length);
+    // With 'Math.random', it's possible to get repeated numbers, meaning that when you click the button,
+    // you will get the same person again if the number repeats.
+    // To avoid this repetition: If the random number is equal to the current index, then just add 1 (or subtract one - either works).
+    if (randomNumber === index) {
+      randomNumber = index + 1;
+    }
+    // Set the index (be sure to also go with the 'checkNumber' - see function above)
+    setIndex(checkNumber(randomNumber));
+  };
+
   return (
     <article className='review'>
       <div className='img-container'>
@@ -61,7 +74,9 @@ const Review = () => {
           <FaChevronRight />
         </button>
       </div>
-      <button className='random-btn'>surprise me</button>
+      <button className='random-btn' onClick={randomPerson}>
+        surprise me
+      </button>
     </article>
   );
 };
