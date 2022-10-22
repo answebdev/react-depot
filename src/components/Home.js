@@ -29,6 +29,11 @@ const Home = () => {
               Reviews
             </Link>
           </li>
+          <li>
+            <Link className='main-link' to='/accordion'>
+              Accordion
+            </Link>
+          </li>
         </ol>
       </div>
     </>
