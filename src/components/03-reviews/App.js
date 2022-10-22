@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Review from './Review';
 import './style.css';
 
 const App = () => {
@@ -10,9 +11,15 @@ const App = () => {
           <title>React Depot | Reviews</title>
         </Helmet>
       </div>
-      <div>
-        <h1>Reviews</h1>
-      </div>
+      <main>
+        <section className='container'>
+          <div className='title'>
+            <h2>Our Reviews</h2>
+            <div className='underline'></div>
+          </div>
+          <Review />
+        </section>
+      </main>
     </>
   );
 };
