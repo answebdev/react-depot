@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import './style.css';
 
 const App = () => {
-  const [questions, setQuestions] = useState(data);
+  const [questions] = useState(data);
 
   return (
     <>
