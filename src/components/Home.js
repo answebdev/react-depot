@@ -34,6 +34,11 @@ const Home = () => {
               Accordion
             </Link>
           </li>
+          <li>
+            <Link className='main-link' to='/menu'>
+              Menu
+            </Link>
+          </li>
         </ol>
       </div>
     </>
