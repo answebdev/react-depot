@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import data from './data';
+import SingleQuestion from './Question';
 import { Helmet } from 'react-helmet';
 import './style.css';
 
 const App = () => {
+  const [questions, setQuestions] = useState(data);
+
   return (
     <>
       <div>
@@ -18,7 +22,15 @@ const App = () => {
         </Helmet>
       </div>
       <main>
-        <div className='accordion-container'>Accordion</div>
+        <div className='accordion-container'>
+          <h3>Questions and Answers About Login</h3>
+          <section className='info'>
+            {questions.map((question) => {
+              // Use the spread operator to pass in all of the options from the data
+              return <SingleQuestion key={question.id} {...question} />;
+            })}
+          </section>
+        </div>
       </main>
     </>
   );
