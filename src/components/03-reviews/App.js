@@ -9,6 +9,13 @@ const App = () => {
       <div>
         <Helmet>
           <title>React Depot | Reviews</title>
+          <style type='text/css'>
+            {`
+              body {
+                background-color: hsl(210, 36%, 96%);
+              }
+            `}
+          </style>
         </Helmet>
       </div>
       <main>

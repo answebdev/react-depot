@@ -12,6 +12,13 @@ const App = () => {
       <div>
         <Helmet>
           <title>React Depot | Birthday Reminder</title>
+          <style type='text/css'>
+            {`
+              body {
+                background-color: #f28ab2;
+              }
+            `}
+          </style>
         </Helmet>
       </div>
       <main>
