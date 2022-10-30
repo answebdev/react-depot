@@ -9,6 +9,9 @@ import Menu from './components/05-menu/App';
 import Error from './components/Error';
 // import './App.css';
 
+// Source Video: https://www.youtube.com/watch?v=ly3m6mv5qvg&t=9s
+// Code Repo: https://github.com/john-smilga/react-projects
+
 function App() {
   return (
     <div>
