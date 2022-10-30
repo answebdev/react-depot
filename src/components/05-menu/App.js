@@ -20,7 +20,7 @@ import './style.css';
 // This will now give us a new array ('allCategories') with all of the unique category values WITHOUT repeating values, as well as 'all' for our 'all' button.
 // Finally, we can then pass in 'allCategories' as our state value up above.
 const allCategories = ['all', ...new Set(items.map((item) => item.category))];
-console.log(allCategories);
+// console.log(allCategories);
 
 const App = () => {
   const [menuItems, setMenuItems] = useState(items);
