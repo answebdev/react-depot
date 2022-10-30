@@ -6,6 +6,7 @@ import Tours from './components/02-tours/App';
 import Reviews from './components/03-reviews/App';
 import Accordion from './components/04-accordion/App';
 import Menu from './components/05-menu/App';
+import Tabs from './components/06-tabs/App';
 import Error from './components/Error';
 // import './App.css';
 
@@ -23,6 +24,7 @@ function App() {
         <Route exact path='/reviews' element={<Reviews />} />
         <Route exact path='/accordion' element={<Accordion />} />
         <Route exact path='/menu' element={<Menu />} />
+        <Route exact path='/tabs' element={<Tabs />} />
         <Route path='*' element={<Error />} />
       </Routes>
     </div>

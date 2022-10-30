@@ -39,6 +39,11 @@ const Home = () => {
               Menu
             </Link>
           </li>
+          <li>
+            <Link className='main-link' to='/tabs'>
+              Tabs
+            </Link>
+          </li>
         </ol>
       </div>
     </>
