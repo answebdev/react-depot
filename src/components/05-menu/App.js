@@ -9,6 +9,18 @@ const App = () => {
   const [menuItems, setMenuItems] = useState(items);
   const [categories, setCategories] = useState([]);
 
+  // Function for filter buttons (see Categories.js)
+  const filterItems = (category) => {
+    // If filter is equal to 'all', set 'items' back to original array with all of the items:
+    if (category === 'all') {
+      setMenuItems(items);
+      return;
+    }
+
+    const newItems = items.filter((item) => item.category === category);
+    setMenuItems(newItems);
+  };
+
   return (
     <>
       <div>
@@ -32,7 +44,7 @@ const App = () => {
           <div className='title'>
             <h2>Our Menu</h2>
             <div className='underline'></div>
-            <Categories />
+            <Categories filterItems={filterItems} />
             <Menu items={menuItems} />
           </div>
         </section>

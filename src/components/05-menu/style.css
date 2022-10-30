@@ -156,12 +156,13 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-.btn-container {
+.menu-btn-container {
+  margin-top: 2rem;
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
 }
-.filter-btn {
+.menu-filter-btn {
   background: transparent;
   border-color: transparent;
   font-size: 1rem;
@@ -174,7 +175,7 @@ p {
   transition: var(--transition);
   border-radius: var(--radius);
 }
-.filter-btn:hover {
+.menu-filter-btn:hover {
   background: var(--clr-gold);
   color: var(--clr-white);
 }
