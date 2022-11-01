@@ -34,6 +34,15 @@ const App = () => {
     );
   }
 
+  // Destructure properties
+  // This line must go here, right after the loading; if placed above, you will get an error:
+  // 'TypeError: Cannot destructure property 'company' of 'jobs[value]' as it is undefined'.
+  // This is because the 'jobs' state is initially set to an empty array (see above).
+  // That's why we need to destructure here, right after the loading.
+  // Because initially, it's an empty array; and then, after the loading, 'jobs' will no longer be an empty array,
+  // rather, it will be an array of jobs that is coming from the API.
+  const { company, dates, duties, title } = jobs[value];
+
   return (
     <>
       <div>
@@ -52,9 +61,29 @@ const App = () => {
           </style>
         </Helmet>
       </div>
-      <div>
-        <h2>Jobs</h2>
-      </div>
+      <section className='section'>
+        <div className='title'>
+          <h2>Experience</h2>
+          <div className='underline'></div>
+        </div>
+        <div className='jobs-center'>
+          {/* btn container */}
+          {/* job info */}
+          <article className='job-info'>
+            <h3>{title}</h3>
+            <h4>{company}</h4>
+            <p className='job-date'>{dates}</p>
+            {duties.map((duty, index) => {
+              return (
+                <div key={index} className='job-desc'>
+                  <FaAngleDoubleRight className='job-icon'></FaAngleDoubleRight>
+                  <p>{duty}</p>
+                </div>
+              );
+            })}
+          </article>
+        </div>
+      </section>
     </>
   );
 };
