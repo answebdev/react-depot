@@ -21,7 +21,7 @@ const Navbar = () => {
               fontSize: '22px',
             }}
           >
-            <Link className='nav-link' to='/'>
+            <Link data-testid='app-name' className='nav-link' to='/'>
               React Depot
             </Link>
           </span>

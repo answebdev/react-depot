@@ -12,7 +12,9 @@ const Home = () => {
         </Helmet>
       </div>
       <div className='app'>
-        <h1 className='title'>Projects</h1>
+        <h1 data-testid='title' className='title'>
+          Projects
+        </h1>
         <ol>
           <li>
             <Link className='main-link' to='/birthday-reminder'>
