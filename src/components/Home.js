@@ -44,11 +44,6 @@ const Home = () => {
               Tabs
             </Link>
           </li>
-          <li>
-            <Link className='main-link' to='/slider'>
-              Slider
-            </Link>
-          </li>
         </ol>
       </div>
     </>
