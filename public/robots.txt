@@ -1,4 +1,3 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
-Sitemap: https://react-depot.netlify.app/sitemap.xml
