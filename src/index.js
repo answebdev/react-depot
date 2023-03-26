@@ -1,6 +1,6 @@
 // React 18 Version
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+// import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { hydrate, render } from 'react-dom';
 import './index.css';

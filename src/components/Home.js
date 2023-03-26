@@ -46,6 +46,11 @@ const Home = () => {
               Tabs
             </Link>
           </li>
+          <li>
+            <Link className='main-link' to='/todo'>
+              Todo App
+            </Link>
+          </li>
         </ol>
       </div>
     </>
