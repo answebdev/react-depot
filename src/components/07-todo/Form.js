@@ -22,14 +22,20 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
   };
 
   return (
-    <form>
+    <form className='form'>
       <input
+        data-cy='form-input'
         value={inputText}
         onChange={inputTextHandler}
         type='text'
         className='todo-input'
       />
-      <button onClick={submitTodoHandler} className='todo-button' type='submit'>
+      <button
+        data-cy='todo-btn'
+        onClick={submitTodoHandler}
+        className='todo-button'
+        type='submit'
+      >
         <i className='fas fa-plus-square'></i>
       </button>
       <div className='select'>
