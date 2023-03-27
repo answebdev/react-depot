@@ -35,13 +35,6 @@ describe('Fifth test suite', () => {
     cy.get('@todoList').should('contain', 'Take a nap');
   });
 
-  //   it('should add a second todo', () => {
-  //     cy.get('[data-cy="form-input"]').type('Go to the store');
-  //     cy.get('[data-cy="todo-btn"]').click();
-  //     cy.get('[data-cy="todo-list"]').should('have.length', 1);
-  //     cy.get('[data-cy="todo-list"]').should('contain', 'Go to the store');
-  //   });
-
   it('should add todos by clicking the Enter key', () => {
     cy.get('[data-cy="form-input"]').type('Practice coding{enter}');
     cy.get('[data-cy="form-input"]').type('Go to the store{enter}');
