@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "todo": "Watch Cypress video",
+    "completed": "false"
+  },
+  {
+    "id": "2",
+    "todo": "Cook dinner",
+    "completed": "true"
+  },
+  {
+    "id": "3",
+    "todo": "Play guitar",
+    "completed": "false"
+  }
+]

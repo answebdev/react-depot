@@ -27,10 +27,18 @@ const Todo = ({ text, todo, todos, setTodos }) => {
       >
         {text}
       </li>
-      <button onClick={completeHandler} className='complete-btn'>
+      <button
+        data-cy='complete-btn'
+        onClick={completeHandler}
+        className='complete-btn'
+      >
         <i className='fas fa-check'></i>
       </button>
-      <button onClick={deleteHandler} className='trash-btn'>
+      <button
+        data-cy='delete-btn'
+        onClick={deleteHandler}
+        className='trash-btn'
+      >
         <i className='fas fa-trash'></i>
       </button>
     </div>
