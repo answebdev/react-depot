@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+// getAllLocalStorage Docs: https://docs.cypress.io/api/commands/getalllocalstorage
+
 describe('Fifth test suite', () => {
   beforeEach(() => {
     cy.visit('/todo');
