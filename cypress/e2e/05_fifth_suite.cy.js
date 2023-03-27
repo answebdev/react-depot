@@ -4,8 +4,8 @@
 
 describe('Fifth test suite', () => {
   beforeEach(() => {
-    // cy.visit('/todo');
-    cy.visit('http://localhost:3000/todo');
+    cy.visit('/todo');
+    //cy.visit('http://localhost:3000/todo');
   });
 
   it('should validate the form input', () => {
