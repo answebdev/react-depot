@@ -7,7 +7,6 @@
 // While designing an API, you can use mock APIs to work concurrently on the front and back-end, as well as to gather feedback from developers.
 
 // Mocking an API response using cy.intercept:
-
 describe('Fourth test suite', () => {
   it('should load correct data', () => {
     cy.visit('/tours');
