@@ -3,7 +3,7 @@ const { defineConfig } = require('cypress');
 module.exports = defineConfig({
   env: {
     codeCoverage: {
-      url: 'http://localhost:3000/__coverage__',
+      url: 'https://react-depot.netlify.app/__coverage__',
     },
   },
   video: false,
@@ -15,7 +15,7 @@ module.exports = defineConfig({
       return config;
       // implement node event listeners here
     },
-    baseUrl: 'http://localhost:3000/',
+    baseUrl: 'https://react-depot.netlify.app/',
     excludeSpecPattern: ['**/1-getting-started/*', '**/2-advanced-examples/*'],
   },
 });
