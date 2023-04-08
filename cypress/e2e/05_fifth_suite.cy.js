@@ -77,7 +77,7 @@ describe('Fifth test suite', () => {
     cy.get('[data-cy="complete-btn"]')
       .eq(1)
       .click();
-    cy.get('select').select('completed'); // Select the 'user-1' option
+    cy.get('select').select('completed'); // Select the 'completed' option
   });
 
   it('should select uncompleted todos from dropdown', () => {
