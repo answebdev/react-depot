@@ -20,8 +20,9 @@ const Todo = ({ text, todo, todos, setTodos }) => {
   };
 
   return (
-    <div className='todo'>
+    <div className='todo' data-testid='todo-div'>
       <li
+        data-testid={`todo-${todo.id}`}
         data-cy='todo-list'
         className={`todo-item ${todo.completed ? 'completed' : ''}`}
       >
