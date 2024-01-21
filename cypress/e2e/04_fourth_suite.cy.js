@@ -8,6 +8,13 @@
 
 // Mocking an API response using cy.intercept:
 describe('Fourth test suite', () => {
+  it('should visit Our Tours page', () => {
+    cy.visit('/tours');
+    cy.url().should('include', '/tours');
+    cy.log('Checking that h1 tag has "Our Tours" text');
+    cy.get('[data-testid="header"]').should('have.text', 'Our Tours');
+  });
+
   it('should load correct data', () => {
     cy.visit('/tours');
     cy.get('.single-tour')

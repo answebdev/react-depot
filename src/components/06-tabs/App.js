@@ -60,7 +60,7 @@ const App = () => {
           </style>
         </Helmet>
       </div>
-      <section className='section'>
+      <section data-testid="custom-element" className='section'>
         <div className='title'>
           <h2>Experience</h2>
           <div className='underline'></div>

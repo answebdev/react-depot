@@ -20,15 +20,16 @@ const Todo = ({ text, todo, todos, setTodos }) => {
   };
 
   return (
-    <div className='todo' data-testid='todo-div'>
+    <div className='todo'>
       <li
-        data-testid={`todo-${todo.id}`}
+        data-testid='todo-container'
         data-cy='todo-list'
         className={`todo-item ${todo.completed ? 'completed' : ''}`}
       >
         {text}
       </li>
       <button
+        data-testid='complete-btn'
         data-cy='complete-btn'
         onClick={completeHandler}
         className='complete-btn'

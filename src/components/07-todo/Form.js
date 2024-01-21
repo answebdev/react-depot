@@ -24,6 +24,7 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
   return (
     <form className='form'>
       <input
+        data-testid='form-input'
         data-cy='form-input'
         value={inputText}
         onChange={inputTextHandler}
@@ -31,6 +32,7 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
         className='todo-input'
       />
       <button
+        data-testid='add-btn'
         data-cy='todo-btn'
         onClick={submitTodoHandler}
         className='todo-button'

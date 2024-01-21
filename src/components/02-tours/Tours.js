@@ -9,8 +9,8 @@ const Tours = ({ tours, removeTour }) => {
         <div className='underline'></div>
       </div>
       <div>
-        {tours.map((tour) => {
-          return <Tour key={tour.id} {...tour} removeTour={removeTour}></Tour>;
+        {tours.map((tour, index) => {
+          return <Tour data-testid={`tour-item-${index}`} key={tour.id} {...tour} removeTour={removeTour}></Tour>;
         })}
       </div>
     </section>

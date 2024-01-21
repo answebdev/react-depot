@@ -67,7 +67,7 @@ const App = () => {
           </style>
         </Helmet>
       </div>
-      <div
+      <div data-testid='todo-app'
         className='App'
         style={{
           display: 'flex',
