@@ -1,6 +1,7 @@
 const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
+  projectId: "fc287j",
   env: {
     codeCoverage: {
       url: 'https://react-depot.netlify.app/__coverage__',
